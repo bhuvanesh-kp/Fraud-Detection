@@ -6,3 +6,6 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: com.bhuvanesh.kafka_streams.deserializer;
+
+server:
+  port: 8080
