@@ -5,7 +5,7 @@ import java.util.List;
 public record Transaction(
     String transactionId,
     String userId,
-    double amount,
+    Double amount,
     String location,
     String type,
     List<Items> items

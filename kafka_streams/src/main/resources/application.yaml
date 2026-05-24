@@ -6,6 +6,11 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: com.bhuvanesh.kafka_streams.deserializer;
+    streams:
+      application-id: kafka_streams
+      properties:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        default.value.serde: com.bhuvanesh.kafka_streams.serdes
 
 server:
   port: 8080
