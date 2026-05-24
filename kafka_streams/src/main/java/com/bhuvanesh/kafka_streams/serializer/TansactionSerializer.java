@@ -10,7 +10,7 @@ public class TansactionSerializer implements Serializer<Transaction>{
     private ObjectMapper mapper = new ObjectMapper();
 
     @Override
-    public byte[] serialize(String topic, Transaction data) {
+    public byte[] serialize(String topic, Transaction data) {   
         try {
             return mapper.writeValueAsBytes(data);
         } catch (Exception e) {
